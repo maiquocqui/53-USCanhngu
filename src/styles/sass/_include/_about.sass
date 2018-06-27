@@ -1,0 +1,253 @@
+// .bigtitle
+// 	font-weight: 600
+// 	text-transform: uppercase
+// 	color: darken($white,60%)
+// 	line-height: 1.4
+// 	+fs(20rem)
+// 	margin-bottom: 30px
+// 	.title 
+// 		+fs(36rem)
+// 		color: $main
+// 		text-transform: uppercase
+// 		font-weight: 700
+// 	&:after
+// 		content: ''
+// 		display: block
+// 		width: 100px
+// 		height: 2px
+// 		background: $blue
+// 		margin-top: 5px
+// 	&.text-xs-center
+// 		&:after
+// 			margin: 10px auto 0
+// .smalltitle
+// 	+fs(28rem)
+// 	// color: $white
+// 	text-transform: uppercase
+// 	font-weight: 700
+// 	margin-bottom: 20px
+// 	&:after
+// 		content: ''
+// 		display: block
+// 		width: 100px
+// 		height: 2px
+// 		background: $blue
+// 		margin-top: 10px
+// 	&.text-xs-center
+// 		&:after
+// 			margin: 10px auto 0
+// .about-intro
+// 	padding: 80px 0
+// 	.link
+// 		+mainbutton
+// 		font-weight: 600
+// .about-company
+// 	padding: 40px 0
+// 	+pos(rel,null)
+// 	.bigtitle
+// 		+fs(18rem)
+// 		.title
+// 			+fs(28rem)
+// 	.content
+// 		// color: $white
+// 		+fs(14rem)
+// 		h5 
+// 			+fs(18rem)
+// 			font-weight: 700
+// 		p 
+// 			// opacity: 0.8
+// 	// .col-xs-12
+// 		// +pos(static,unset)
+// 	.slidewrap
+// 		+pos(rel,null)
+// 	.about-slide
+// 		+pos(abs, 0 null null 0)
+// 		overflow: hidden
+// 		width: 200%
+// 		// +transform(translateY(-50%))
+// 		padding-bottom: 50px
+// 		.slick-list
+// 			margin-left: -15px
+// 		.slick-prev, .slick-next
+// 			+pos(abs, null)
+// 			display: block
+// 			width: 40px
+// 			height: 40px
+// 			opacity: 0.5
+// 			color: $main
+// 			+fs(0)
+// 			&:before
+// 				content: ''
+// 				font-family: 'fontawesome'
+// 				+fs(28rem)
+// 			&:hover
+// 				opacity: 1
+// 				color: $blue
+// 		.slick-prev
+// 			left: 0px
+// 			bottom: 0px
+// 			&:before
+// 				content: '\f104'
+// 		.slick-next
+// 			left: 40px
+// 			bottom: 0px
+// 			&:before
+// 				content: '\f105'
+// 		.item
+// 			width: 400px
+// 			padding: 0px 15px
+// 			a 
+// 				display: block
+// 				// padding: 5px
+// 				background: $white
+// 				+bor-rad(5px)
+// 				overflow: hidden
+// 				+pos(rel,null)
+// 				&:before
+// 					content: '\f00e'
+// 					font-family: 'fontawesome'
+// 					+pos(abs, 0 null 0 0)
+// 					right: 0
+// 					+flexbox
+// 					justify-content: center
+// 					align-items: center
+// 					+fs(24rem)
+// 					color: $white
+// 					background: color-rgba($blue,0.5)
+// 					opacity: 0
+// 					+transform(scale3d(3,3,3))
+// 					+transition(all,0.5s)
+// 				&:hover
+// 					&:before
+// 						opacity: 1
+// 						+transform(scale3d(1,1,1))
+// .whychoose
+// 	padding: 40px 0
+// 	background: darken($white,3%)
+// 	.bigtitle
+// 		+fs(18rem)
+// 		.title
+// 			+fs(28rem)
+// 	.whychooselist
+// 		.slick-track
+// 			+flexbox
+// 		.item
+// 			padding: 0px 15px
+// 			height: auto
+// 		.whycol
+// 			height: 100%
+// 			background: $white
+// 			border: 1px solid darken($white,10%)
+// 			padding: 15px
+// 			text-align: center
+// 			+bor-rad(5px)
+// 			cursor: pointer
+// 			+transition(all,0.3s)
+// 			figure
+// 				.icon
+// 					height: 90px
+// 					+flexbox
+// 					justify-content: center
+// 					align-items: center
+// 					margin-bottom: 10px
+// 					+transition(all,0.3s)
+// 				figcaption
+// 					.des
+// 						+fs(14rem)
+// 						color: darken($white,40%)
+// 						line-height: 1.8
+// 						+transition(all,0.3s)
+// 			&:hover
+// 				background: $blue
+// 				// box-shadow: 0 3px 30px color-rgba($black,0.5)
+// 				figure
+// 					.icon
+// 						img 
+// 							-webkit-filter: grayscale(100%) brightness(1000%)
+// 							-moz-filter: grayscale(100%) brightness(1000%)
+// 							-o-filter: grayscale(100%) brightness(1000%)
+// 							-ms-filter: grayscale(100%) brightness(1000%)
+// 							filter: grayscale(100%) brightness(1000%)
+// 					figcaption
+// 						.des
+// 							color: $white
+
+// .client-result
+// 	padding: 40px 0
+// 	background: lighten($blue,63%) url(../img/usbg2.png) center bottom repeat-x
+// 	background-size: 100% auto
+// 	.bigtitle
+// 		+fs(16rem)
+// 		.title
+// 			+fs(24rem)
+// 	.result-list
+// 		margin: 0px -15px
+// 		.slick-prev, .slick-next
+// 			+fs(0)
+// 			color: $main
+// 			z-index: 5
+// 			cursor: pointer
+// 			&:hover
+// 				color: $blue
+// 			&:before
+// 				content: ''
+// 				font-family: 'fontawesome'
+// 				+fs(32rem)
+// 		.slick-prev
+// 			+pos(abs, null null 10px 47%)
+// 			&:before
+// 				content: '\f104'
+// 		.slick-next
+// 			+pos(abs, null 47% 10px null)
+// 			&:before
+// 				content: '\f105'
+// 		.slick-dots
+// 			text-align: center
+// 			margin-top: 30px
+// 			li 
+// 				display: inline-block
+// 				width: 40px
+// 				height: 2px
+// 				background: darken($white,40%)
+// 				opacity: 0.3
+// 				cursor: pointer
+// 				button
+// 					display: none
+// 				+ li
+// 					margin-left: 10px
+// 				&.slick-active
+// 					opacity: 1
+// 					background: $red
+// 		.item
+// 			text-align: center
+// 			padding: 0px 15px
+// 		.result-img
+// 			+bor-rad(10px)
+// 			overflow: hidden
+// 			border: 1px solid darken($white,20%)
+// 			display: inline-block
+// 			+pos(rel,null)
+// 			.label
+// 				background: $red
+// 				+bor-rad(5px)
+// 				color: $white
+// 				+pos(abs, null 15px 15px null)
+// 				padding: 0px 5px
+// 		.result-detail
+// 			.client
+// 				+fs(20rem)
+// 				font-weight: bold
+// 				margin-bottom: 20px
+// 				text-transform: uppercase
+// 				&:after
+// 					content: ''
+// 					display: block
+// 					width: 60px
+// 					height: 1px
+// 					background: $blue
+// 					margin-top: 10px
+// 			.content
+
+
+.about-page
+	margin: 40px 0

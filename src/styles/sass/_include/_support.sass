@@ -1,0 +1,183 @@
+.support-page
+	margin: 40px 0
+	.nav-tabs
+		margin: 0
+		padding: 0
+		border: none
+		margin-bottom: 30px
+		text-align: center
+		.nav-item
+			display: inline-block
+			margin: 0
+			padding: 0
+			float: none
+			+ .nav-item
+				margin-left: 5px
+			.nav-link
+				display: block
+				color: $main
+				padding: 7px 15px
+				+bor-rad(50px)
+				border: 1px solid $blue
+				a 
+					color: $main
+				&:hover
+					color: $red
+				&.active
+					border-color: $red
+					background: $red
+					color: $white
+.faqlist
+	.faq
+		// +bor-rad(5px)
+		border: 1px solid darken($white,10%)
+		margin-bottom: 15px
+		// +bor-rad(5px)
+		overflow: hidden
+		.faqtitle
+			font-weight: 500
+			color: $main
+			padding: 15px 15px 15px 40px
+			+pos(rel,null)
+			cursor: pointer
+			&:hover
+				color: $green
+			&:before 
+				content: '\f059'
+				font-family: 'fontawesome'
+				margin-right: 10px
+				color: $bluebg
+				+pos(abs, 15px null null 15px)
+			&:after
+				content: '\f105'
+				font-family: 'fontawesome'
+				+pos(abs, 12px 15px null null)
+				+fs(18rem)
+				display: block
+				+transform(rotateZ(90deg))
+			&.active
+				color: $green
+				font-weight: 700
+				&:after
+					font-weight: normal
+					+transform(rotateZ(90deg)scale(-1,1))
+		.faqcontent
+			display: none
+			border-top: 1px solid darken($white,10%)
+			padding: 15px 15px 0 40px
+
+.send-nessage
+	margin: 40px 0
+	// +bor-rad(5px)
+	border: 1px solid darken($white,10%)
+	background: darken($white,3%)
+	padding: 10px 15px
+	+media-breakpoint-down(md)
+		margin-top: 0
+	.module-title
+		color: black
+		font-weight: 600
+		+fs(16rem)
+		color: $green
+		margin-bottom: 15px
+		&:before
+			content: '\f044'
+			font-family: 'fontawesome'
+			font-weight: normal
+			margin-right: 5px
+	.form-group
+		margin-bottom: 10px
+		+flexbox
+		flex-wrap: wrap
+		label
+			+fs(14rem)
+		input, textarea
+			width: 100%
+			// +bor-rad(3px)
+			border: 1px solid darken(white,15%)
+			padding: 10px 15px
+			&:hover
+				border-color: darken($white,30%)
+			&:focus
+				border-color: $blue
+	input[type="reset"]
+		display: none
+	input[type="submit"]
+		+mainbutton
+		+bor-rad(0)
+		border: none
+
+
+.bookingform
+	border: 1px solid darken($white,10%)
+	+bor-rad(5px)
+	padding: 20px
+	max-width: 600px
+	margin: 0px auto
+	input[type="reset"]
+		display: none
+	.form-group
+		+flexbox
+		flex-wrap: wrap
+		label 
+			width: 180px
+			+fs(14rem)
+			padding: 8px 0px
+		input, ul 
+			width: calc(100% - 180px)
+		input, select, textarea
+			border: 1px solid darken($white,10%)
+			padding: 8px 15px
+			
+		select 
+			padding: 7px 15px
+		&.date
+			ul 
+				+flexbox
+				li 
+					width: 33.33%
+					select
+						width: 100%
+					+ li 
+						margin-left: 10px
+		&.nation
+			label
+				width: 100%
+			ul 
+				width: 100%
+				li 
+					display: inline-block
+					margin-right: 10px
+		&.text
+			label
+				width: 100%
+			textarea
+				width: 100%
+		&.dateb
+			label
+				width: 100%
+			ul 
+				+flexbox
+				width: 100%
+				li 
+					width: 33.33%
+					+ li 
+						margin-left: 10px
+					input, select
+						width: 100%
+					&:last-child
+						+pos(rel,null)
+						&:after
+							content: '\f073'
+							font-family: 'fontawesome'
+							+pos(abs, null 10px 7px null)
+							color: darken($white,40%)
+	input[type="submit"]
+		+mainbutton
+		border: none
+		text-transform: uppercase
+		&:hover
+			background: darken($green,10%)
+
+.student-feedback
+	margin-bottom: 40px

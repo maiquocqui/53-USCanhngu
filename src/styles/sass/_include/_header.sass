@@ -1,0 +1,247 @@
+body 
+	padding-top: 100px
+	+media-breakpoint-down(lg)
+		padding-top: 60px
+.homepage
+	padding-top: 0
+	+media-breakpoint-down(lg)
+		padding-top: 60px
+header
+	+pos(fix, 0 0 null 0)
+	z-index: 1000
+	padding: 10px 0 0
+	+transition(all,0.5s)
+	background: $white
+	+media-breakpoint-down(lg)
+		padding-top: 0
+	.headertop
+		+media-breakpoint-down(lg)
+			float: right
+			padding: 15px 0
+			.container
+				max-width: unset
+				width: auto
+	.social
+		float: left
+		+media-breakpoint-down(lg)
+			display: none
+		a
+			display: inline-block
+			+fs(20rem)
+			color: $black
+			line-height: 30px
+			&:hover
+				color: $green
+			+ a 
+				margin-left: 10px
+	.colright
+		float: right
+		.search
+			float: left
+			.searchwrap
+				+flexbox
+				+bor-rad(5px)
+				width: 220px
+				border: 1px solid $black
+				+media-breakpoint-down(xs)
+					width: 100px
+				.searchbox
+					+flexbox
+				input
+					background: none
+					line-height: 26px
+					border: none
+					color: $black
+					width: calc(100% - 30px)
+					padding: 0px 10px
+				.searchbutton
+					width: 30px
+					// height: 30px
+					line-height: 26px
+					text-align: center
+					color: $black
+		.language
+			float: left
+			margin-left: 20px
+			a 
+				display: inline-block
+				+fs(15rem)
+				font-weight: 700
+				color: $main
+				+ a 
+					margin-left: 15px
+					+pos(rel,null)
+					line-height: 30px
+					&:before
+						content: ''
+						display: block
+						width: 1px
+						height: 10px
+						background: $black
+						+pos(abs,10px null null -6px)
+				&.active
+					color: $green
+	.headermain
+		+pos(rel,null)
+		+media-breakpoint-down(lg)
+			float: left
+			.container
+				max-width: unset
+				width: auto
+	.btn-showmenu
+		float: left
+		+fs(24rem)
+		margin: 10px 15px 10px 0
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		background: $black
+		opacity: 0.7
+		display: none
+	.sitelogo
+		+pos(abs, 0 null 10px 50%)
+		+transform(translateX(-50%))
+		+media-breakpoint-down(lg)
+			+pos(static,unset)
+			+transform(translateX(0))
+			float: left
+			padding: 10px 0
+		+media-breakpoint-down(xs)
+			padding: 17px 0
+		a 
+			display: block
+			img 
+				height: 50px
+				+media-breakpoint-down(lg)
+					height: 40px
+				+media-breakpoint-down(xs)
+					height: 20px
+	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix,0 null 0 0)
+			width: 280px
+			background: $white
+			+transition(all,0.5s)
+			+transform(translateX(-280px))
+			&.open
+				+transform(translateX(0))
+		.sitelogo
+			+media-breakpoint-down(lg)
+				float: none
+				padding: 20px 0
+				border-bottom: 2px solid $green
+				text-align: center
+				img 
+					height: 50px
+		.menucontent
+		.menuleft
+			float: left
+			+media-breakpoint-down(lg)
+				float: none
+		.menuright
+			float: right
+			+media-breakpoint-down(lg)
+				float: none
+		ul.menulink
+			> li 
+				float: left
+				+media-breakpoint-down(lg)
+					float: none
+				+ li
+					margin-left: 20px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				> a
+					display: block
+					color: $black
+					+fs(15rem)
+					font-weight: 700
+					line-height: 20px
+					padding: 20px 0
+					+media-breakpoint-down(lg)
+						padding: 15px 25px
+						border-bottom: 1px solid darken($white,10%)
+				&.hassub
+					+pos(rel,null)
+					.btn-showsub
+						display: none
+						+fs(18rem)
+						width: 30px
+						height: 30px
+						text-align: center
+						line-height: 30px
+						+pos(abs, 7px 10px null null)
+						+media-breakpoint-down(lg)
+							display: block
+					.sub 
+						background: color-rgba($green,0.9)
+						+pos(abs, 100% null null 50%)
+						+transform(translateX(-50%))
+						min-width: 250px
+						margin-top: 20px
+						visibility: hidden
+						opacity: 0
+						+transition(all,0.5s)
+						+media-breakpoint-down(lg)
+							+pos(static,unset)
+							display: none
+							margin-top: 0
+							visibility: visible
+							opacity: 1
+							background: darken($white,5%)
+							+transform(translateX(0))
+							+transition(all,0s)
+						> ul 
+							> li 
+								+pos(rel,null)
+								> a
+									display: block
+									padding: 10px 15px
+									color: rgba($white,0.8)
+									+media-breakpoint-down(lg)
+										padding: 10px 25px
+										color: $main
+								&:hover
+									background: color-rgba($black,0.1)
+									color: $white
+								.nano
+									display: none
+									+pos(abs, 0 null null 100%)
+									min-width: 250px
+									background: color-rgba(darken($green,10%),0.9)
+									ul 
+										li 
+											a 
+												display: block
+												padding: 10px 15px
+												color: rgba($white,0.8)
+												+media-breakpoint-down(lg)
+													padding: 10px 25px
+													color: $main
+												&:hover
+													background: color-rgba($white,0.1)
+								&:hover
+									.nano
+										display: block
+				&:hover
+					+media-breakpoint-up(xl)
+						> a 
+							color: $green
+						.sub
+							margin-top: 0
+							visibility: visible
+							opacity: 1
+				&.active
+					+media-breakpoint-up(xl)
+					> a 
+						color: $green
+	&.minimal
+		background: $white
+		box-shadow: 0 3px 30px color-rgba($black,0.1)
+.homepage
+	header
+		background: transparent
+		+media-breakpoint-down(lg)
+			background: $white
+		&.minimal
+			background: $white

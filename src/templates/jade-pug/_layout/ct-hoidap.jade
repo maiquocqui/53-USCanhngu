@@ -1,0 +1,183 @@
+section.breadcrumbwrap.clearfix
+	.breadcrumbimg
+		img(src="img/breadcrumb/1.jpg", alt="")
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Định cư mỹ
+				meta(itemprop='position', content='2')
+.container
+	.row.flex.flex-wrap
+		.col-xs-12.col-lg-9
+			section.support-page.clearfix
+				h1.pagetitle Hỏi đáp
+				//- ul.nav.nav-tabs(role='tablist')
+					li.nav-item
+						a.nav-link.active(data-toggle='tab', href='#home', role='tab') Luật di trú
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#profile', role='tab') Người mới nhập cư
+					li.nav-item
+						a.nav-link(data-toggle='tab', href='#messages', role='tab') Kinh nghiệm phỏng vấn
+				//- .tab-content
+					#home.tab-pane.active(role='tabpanel')
+				.faqlist.clearfix
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+					.faq
+						.faqtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+						.faqcontent.content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, hic voluptatibus minus at doloremque necessitatibus molestias nulla possimus distinctio culpa.
+				//- .register-info.clearfix
+					.module-title Đăng ký thông tin bên dưới để được chuyên viên tư vấn tiếp nhận tư vấn hồ sơ miễn phí
+					.form-group
+						label(for="") Họ và tên(*):
+						input(type="text")
+					.form-group
+						label(for="") Số điện thoại:
+						input(type="text")
+					.form-group
+						label(for="") Email:
+						input(type="text")
+					.form-group
+						label(for="") Nội dung yêu cầu:
+						textarea(name="", cols="30", rows="5")
+					input(type="submit", value="Gửi yêu cầu")
+			section.student-feedback.clearfix
+				h1.pagetitle Chia sẻ của học viên
+				.row.flex.flex-wrap.flex-content-center
+					.col-xs-12.col-md-8.col-lg-8
+						.feedback-slide
+							.item
+								.feedback
+									.content Giờ đây, nước Anh trong mắt tôi không chỉ là ước mơ đã thành hiện thực, mà còn là một kỷ niệm của một thời gian du học vất vả nhưng vô cùng ý nghĩa.Cảm ơn USC đã mang đến cho tôi những ước mơ, những trải nghiệm quý báu, những người bạn tuyệt vời và một tầm nhìn mới tại Anh.
+									.user
+										figure 
+											.img
+												img(src="img/feedback/1.jpg", alt="")
+											figcaption
+												.name Nguyễn Ngọc Băng Tâm
+												.des Học viên Khóa MBA, trường University of Birmingham
+							.item
+								.feedback
+									.content Giờ đây, nước Anh trong mắt tôi không chỉ là ước mơ đã thành hiện thực, mà còn là một kỷ niệm của một thời gian du học vất vả nhưng vô cùng ý nghĩa.Cảm ơn USC đã mang đến cho tôi những ước mơ, những trải nghiệm quý báu, những người bạn tuyệt vời và một tầm nhìn mới tại Anh.
+									.user
+										figure 
+											.img
+												img(src="img/feedback/1.jpg", alt="")
+											figcaption
+												.name Nguyễn Ngọc Băng Tâm
+												.des Học viên Khóa MBA, trường University of Birmingham
+							.item
+								.feedback
+									.content Giờ đây, nước Anh trong mắt tôi không chỉ là ước mơ đã thành hiện thực, mà còn là một kỷ niệm của một thời gian du học vất vả nhưng vô cùng ý nghĩa.Cảm ơn USC đã mang đến cho tôi những ước mơ, những trải nghiệm quý báu, những người bạn tuyệt vời và một tầm nhìn mới tại Anh.
+									.user
+										figure 
+											.img
+												img(src="img/feedback/1.jpg", alt="")
+											figcaption
+												.name Nguyễn Ngọc Băng Tâm
+												.des Học viên Khóa MBA, trường University of Birmingham
+		.col-xs-12.col-lg-3
+			.send-nessage.clearfix
+				.module-title Đặt câu hỏi
+				.form-group
+					label(for="") Họ và tên(*):
+					input(type="text")
+				.form-group
+					label(for="") Số điện thoại:
+					input(type="text")
+				.form-group
+					label(for="") Email:
+					input(type="text")
+				.form-group
+					label(for="") Nội dung câu hỏi:
+					textarea(name="", cols="30", rows="5")
+				input(type="submit", value="Gửi")
+			//- nav.other-news.clearfix
+				.othertitle 
+					span Tin tức mới
+				ul 
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/1.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Học bổng ngành du lịch - nhà hàng - khách sạn
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/2.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Tìm hiểu về ngành dược Đại học Kansas danh tiếng
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/3.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Triển lãm học bổng Mỹ tháng 3/2017
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/4.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Nhận học bổng cùng Đại học Nebraska - Lincoln
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/5.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Kỳ thi xét tuyển học bổng trung học công lập Mỹ

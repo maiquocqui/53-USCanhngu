@@ -1,0 +1,106 @@
+footer
+	background: $bluebg
+	.footertop
+		padding: 60px 0 40px
+	.footercol
+		color: $white
+		margin-bottom: 20px
+	.title
+		+fs(24rem)
+		color: #47c63d
+		margin-bottom: 20px
+		&:after
+			content: ''
+			display: block
+			width: 70px
+			height: 3px
+			background: #314575
+			margin-top: 5px
+	.contact-detail
+		ul 
+			li 
+				color: $white
+				+fs(15rem)
+				+pos(rel,null)
+				padding-left: 25px
+				line-height: 1.8
+				.fa
+					+pos(abs, 2px null null 0)
+					+fs(18rem)
+				a 
+					color: $white
+					&:hover
+						color: $green
+	.footerlink
+		ul 
+			li 
+				line-height: 1.8
+				a 
+					color: $white
+					&:hover
+						color: $green
+	.subscribewrap
+		.module-title
+			color: $white
+			margin-bottom: 10px
+		.subscribefrm
+			+pos(rel,null)
+			input
+				background: color-rgba($white,0.1)
+				border: none
+				+bor-rad(100px)
+				line-height: 40px
+				padding: 0px 20px
+				color: $white
+				width: 100%
+			.subscribebutton
+				+fs(0)
+				width: 36px
+				height: 36px
+				+bor-rad(100px)
+				background: #47c63d
+				line-height: 36px
+				text-align: center
+				color: $white
+				+pos(abs, 2px 2px null null)
+				&:before
+					content: '\f00c'
+					font-family: 'fontawesome'
+					+fs(18rem)
+	.footerbottom
+		border-top: 1px solid color-rgba($white,0.1)
+		.copyright
+			+fs(14rem)
+			color: color-rgba($white,0.5)
+			padding: 10px 0
+			float: left
+		.footernav
+			float: right
+			ul 
+				li 
+					display: inline-block
+					padding: 10px 0
+					+ li 
+						margin-left: 25px
+					a 
+						color: color-rgba($white,0.5)
+						+fs(14rem)
+						&:hover
+							color: $white
+
+.up 
+	width: 40px
+	height: 40px
+	+bor-rad(50px)
+	background: $green
+	color: $white
+	line-height: 40px
+	text-align: center
+	+pos(fix, null 20px 20px null)
+	+transform(translateX(100px))
+	cursor: pointer
+	+transition(all,0.5s)
+	&.active
+		+transform(translateX(0))
+	&:hover
+		background: lighten($green,10%)

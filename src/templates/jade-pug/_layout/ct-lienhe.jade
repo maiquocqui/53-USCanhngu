@@ -1,0 +1,54 @@
+section#map.contact-map.clearfix
+	iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.426162145277!2d106.67026531538363!3d10.778635992320059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed9c65a772d%3A0x3d34b2bebd9942fa!2sUniversal+Study!5e0!3m2!1sen!2s!4v1495436255478', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+//- section.breadcrumbwrap.clearfix
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Định cư mỹ
+				meta(itemprop='position', content='2')
+.container
+	section.contact-page.clearfix
+		h1.pagetitle Liên hệ
+		.content 
+			p Mọi thắc mắc xin vui lòng để lại lời nhắn cho chúng tôi qua form bên dưới
+	section.contact-form.clearfix
+		.row.flex.flex-wrap
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Họ và tên:
+					input(type="text")
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Số điện thoại:
+					input(type="text")
+			.col-xs-12.col-md-6.col-lg-4
+				.form-group
+					label(for="") Địa chỉ email:
+					input(type="text")
+			.col-xs-12
+				.form-group
+					label(for="") Nội dung lời nhắn
+					textarea(name="", cols="30", rows="6")
+			.col-xs-12
+				.btnwrap
+					input(type="submit", value="Send")
+	section.contact-info.clearfix
+		ul 
+			li 
+				h1.company Universal Study
+			li 238-240-242 Hòa Hưng, Phường 13, Quận 10, TPHCM
+			li Hotline: 
+				a(href="tel:(848) 6264 3648") (848) 6264 3648
+				| – 
+				a(href="tel:098 95 98 251") 098 95 98 251
+			li Fax: (848) 6264 3684
+			li Email: 
+				a(href="mailto:info@universalstudy.edu.vn") info@universalstudy.edu.vn
+			//- li Website: 
+				a(href="http://usvisa.com.vn") usvisa.com.vn
+		

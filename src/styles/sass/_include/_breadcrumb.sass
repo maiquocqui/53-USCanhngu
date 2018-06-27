@@ -1,0 +1,69 @@
+.breadcrumbwrap
+	// background: darken($white,2%)
+	+pos(rel,null)
+	z-index: 1
+	.breadcrumbimg
+		+pos(abs, 0 null 0 0)
+		right: 0
+		+flexbox
+		justify-content: center
+		align-items: center
+		filter: brightness(90%)
+		overflow: hidden
+		img
+			width: 100%
+		.slick-list
+			display: block
+			+pos(abs, 0 null 0 0)
+			right: 0
+		.slick-track
+			height: 100%
+		.item
+			.img 
+				height: 100%
+	.container
+		+pos(rel,null)
+		z-index: 5
+	.pagename
+		margin: 450px 0 10px
+		display: inline-block
+		+fs(36rem)
+		font-weight: 600
+		text-transform: uppercase
+		color: $white
+		&:after
+			content: ""
+			display: block
+			width: 60px
+			height: 1px
+			background: $white
+			margin-top: 10px
+	.breadcrumb
+		display: block
+		padding: 300px 0 15px
+		+bor-rad(0)
+		background: none
+		border: none
+		// margin-bottom: 40px	
+		// +pos(abs, 100% 15px null 15px)
+		z-index: 1
+		li 
+			float: left
+			color: $white
+			+fs(14rem)
+			&:first-child
+				&:before
+					content: '\f015'
+					font-family: 'fontawesome'
+					margin-right: 5px
+					line-height: 1
+			+ li 
+				&:before
+					content: '-'
+					margin: 0px 10px
+			a 
+				color: $white
+				font-weight: 600
+				&:hover
+					text-decoration: underline
+			

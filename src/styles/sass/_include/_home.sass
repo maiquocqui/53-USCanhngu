@@ -1,0 +1,552 @@
+.headtitle
+	+fs(44rem)
+	font-weight: 600
+	color: $blue
+	text-align: center
+	margin-bottom: 40px
+.pagetitle
+	+fs(28rem)
+	font-weight: 700
+	text-transform: uppercase
+	color: $main
+	margin-bottom: 30px
+	&:after
+		content: ''
+		display: block
+		width: 30px
+		height: 3px
+		background: $green
+		margin-top: 10px
+
+.hometitle
+	+fs(40rem)
+	font-weight: 700
+	text-align: center
+	margin-bottom: 20px
+	+media-breakpoint-down(lg)
+		+fs(36rem)
+	+media-breakpoint-down(md)
+		+fs(32rem)
+	&:after
+		content: ''
+		display: block
+		width: 80px
+		height: 3px
+		background: $green
+		margin: 15px auto 0
+	&.text-xs-left
+		&:after
+			margin-left: 0
+.pagedes
+	+fs(14rem)
+	text-align: center
+	margin: 0 auto
+	margin-bottom: 30px
+	max-width: 80%
+	+media-breakpoint-down(lg)
+		max-width: 90%
+	+media-breakpoint-down(md)
+		max-width: 100%
+.home-welcome
+	padding: 40px 0
+	.featurelist
+		.featurecol
+			background: $green
+			height: 100%
+			+bor-rad(0 0 20px 0)
+			+media-breakpoint-down(lg)
+				margin-bottom: 30px
+				height: auto
+			figure 
+				+flexbox
+				flex-wrap: wrap
+				padding: 15px
+				+media-breakpoint-down(lg)
+					// padding: 10px
+			.featureimg
+				width: 45px
+				+flexbox
+				justify-content: center
+				align-items: center
+				+media-breakpoint-down(lg)
+					// width: 100%
+				img 
+					max-width: 100%
+					max-height: 100%
+			figcaption
+				width: calc(100% - 45px)
+				padding-left: 15px
+				+flexbox
+				flex-wrap: wrap
+				+media-breakpoint-down(lg)
+					// width: 100%
+					// padding-left: 0
+				.number
+					width: 100%
+					+fs(36rem)
+					text-transform: uppercase
+					color: $white
+					font-weight: 600
+					line-height: 1
+					+media-breakpoint-down(lg)
+						// text-align: center
+				.des 
+					width: 100%
+					// +fs(16rem)
+					font-weight: 600
+					color: #1e4310
+					+media-breakpoint-down(lg)
+						// text-align: center
+.home-service
+	padding: 40px 0
+	color: $white
+	.servicelist
+		.servicecol
+			figure 
+				.serviceimg
+					height: 100px
+					+flexbox
+					justify-content: center
+					align-items: center
+					margin-bottom: 20px
+				figcaption
+					text-align: center
+.home-tuvan
+	padding: 40px 0
+	.tuvanlist
+		.row
+			// margin: 0px -5px
+		.col-xs-12
+			// padding: 0px 5px
+		.tuvancol
+			margin-bottom: 30px
+			figure 
+				+pos(rel,null)
+				overflow: hidden
+				.tuvanimg
+					display: block
+					height: 220px
+					+transition(all,0.5s)
+					+media-breakpoint-down(md)
+						height: 200px
+					+media-breakpoint-down(sm)
+						height: 180px
+				figcaption
+					+pos(abs, null 0 0 0)
+					padding: 20px
+					background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+					+transition(all,0.5s)
+					+media-breakpoint-down(md)
+						padding: 5px
+					.tuvancaption
+						+fs(16rem)
+						font-weight: 600
+						color: $white
+						text-shadow: 0 3px 10px color-rgba($black,0.1)
+						+media-breakpoint-down(md)
+							+fs(12rem)
+			&.big
+				figure 
+					.tuvanimg
+						height: 470px
+						+media-breakpoint-down(md)
+							height: 430px
+			&.text
+				figure 
+					figcaption
+						+pos(abs, 0 null 0 0)
+						right: 0
+						background: none
+						+flexbox
+						justify-content: center
+						align-items: center
+						padding: 0px 30px
+						color: $white
+						+media-breakpoint-down(md)
+							padding: 5px
+							+fs(12rem)
+			&:hover
+				figure 
+					.tuvanimg
+						+transform(scale3d(1.2,1.2,1))
+						filter: brightness(120%)
+					figcaption
+						// background: linear-gradient(color-rgba($black,0),color-rgba($black,0.8))
+
+
+
+.home-news
+	padding: 40px 0
+	color: $white
+	.homenews-list
+		.row
+			margin: 0px -10px
+		.col-xs-12
+			padding: 0px 10px
+		.newscol
+			margin-bottom: 20px
+			figure 
+				+flexbox
+				flex-wrap: wrap
+				background: $green
+				.newsimg
+					display: block
+					width: 50%
+					height: 200px
+					+media-breakpoint-down(xs)
+						width: 100%
+				figcaption 
+					width: 50%
+					padding: 15px
+					+media-breakpoint-down(lg)
+						padding: 10px
+					+media-breakpoint-down(xs)
+						width: 100%
+					.newsname
+						+fs(15rem)
+						font-weight: 700
+						margin-bottom: 15px
+						+media-breakpoint-down(lg)
+							+fs(15rem)
+						&:after
+							content: ''
+							display: block
+							width: 80px
+							height: 1px
+							margin-top: 10px
+							background: $white
+						a 
+							color: $white
+					.newsdes
+						color: $white
+						+fs(14rem)
+						margin-bottom: 15px
+						+media-breakpoint-down(lg)
+							+fs(14rem)
+					.link
+						color: #1e6006
+						+media-breakpoint-down(lg)
+							+fs(13rem)
+						&:hover
+							color: $white
+							letter-spacing: 1px
+			&:nth-child(even)
+				figure 
+					.newsimg
+						order: 2
+						+media-breakpoint-down(xs)
+							order: 1
+					figcaption
+						order: 1
+						+media-breakpoint-down(xs)
+							order: 2
+			&.big
+				figure 
+					+pos(rel,null)
+					.newsimg
+						height: 420px
+						width: 100%
+					figcaption
+						+pos(abs, null 0 0 0)
+						padding: 20px
+						background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+						width: 100%
+						time
+							color: $green
+							display: block
+							&:before
+								content: '\f073'
+								font-family: 'fontawesome'
+								margin-right: 5px
+						.newsname
+							+fs(20rem)
+							font-weight: 600
+							margin-bottom: 0
+							&:after
+								display: none
+							a 
+								color: $white
+.home-feedback
+	padding: 40px 0
+	.hometitle
+		&:after
+			margin-left: 0
+	.feedback-slide
+		.slick-prev
+			top: -35px
+			right: 40px
+			left: unset
+			+transform(translateY(-100%))
+		.slick-next
+			top: -35px
+			right: 0
+			+transform(translateY(-100%))
+		.item
+			padding: 0
+
+.home-partner
+	padding: 40px 0
+	.hometitle
+		&:after
+			margin-left: 0
+	.partnerslide
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			z-index: 10
+			+fs(0)
+			opacity: 0.5
+			color: $main
+			&:before
+				content: ''
+				font-family: 'fontawesome'
+				+fs(32rem)
+			&:hover
+				opacity: 1
+				color: $bluebg
+		.slick-prev
+			left: -20px
+			&:before
+				content: '\f104'
+		.slick-next
+			right: -20px
+			&:before
+				content: '\f105'
+		.slick-prev
+			top: -35px
+			right: 40px
+			left: unset
+			+transform(translateY(-100%))
+		.slick-next
+			top: -35px
+			right: 0
+			+transform(translateY(-100%))
+	.partnerlist
+		.partnercol
+			border: 1px solid darken($white,10%)
+			height: 100px
+			+flexbox
+			justify-content: center
+			align-items: center
+			margin-bottom: 30px
+			img 
+				max-width: 60%
+				max-height: 60%
+.home-form
+	padding: 40px 0
+	color: $white
+	.form-wrap
+		max-width: 70%
+		margin: 0 auto
+		+media-breakpoint-down(lg)
+			max-width: 80%
+		+media-breakpoint-down(md)
+			max-width: 100%
+	.form-group
+		margin-bottom: 10px
+		input, select, textarea
+			background: color-rgba($white,0.5)
+			border: none
+			+bor-rad(5px)
+			width: 100%
+			padding: 10px 15px
+			color: $black
+			&:hover, &:active, &:focus
+				background: color-rgba($white,0.8)
+		select 
+			padding: 9px 10px
+	.select-option
+		margin-bottom: 15px
+		label
+			display: inline-block
+			width: 100%
+			margin-bottom: 10px
+		ul 
+			+flexbox
+			flex-wrap: wrap
+			li 
+				width: 25%
+				margin-bottom: 10px
+				+media-breakpoint-down(sm)
+					width: 50%
+				+media-breakpoint-down(xs)
+					width: 100%
+		.checkbox, .cf
+			input[type="checkbox"]
+				display: none
+				+ label
+					display: inline-block
+					vertical-align: middle
+					color: $white
+					margin-bottom: 0
+					&:before
+						background: color-rgba($white,0.5)
+						border: none
+					&:after
+						color: $green
+				&:checked
+					+ label
+						&:before
+							background: $white
+	label, input[type="reset"]
+		display: none
+	.frm-btn
+		text-align: center
+		margin-top: 15px
+		input[type="submit"]
+			display: inline-block
+			text-transform: uppercase
+			width: auto
+			color: $white
+			padding: 10px 60px
+			+bor-rad(100px)
+			background: $green
+			border: none
+			&:hover
+				background: lighten($green,10%)
+textarea 
+	min-height: 100px
+
+.home-teacher
+	padding: 40px 0
+	overflow: hidden
+	.hometitle
+		color: $white
+		margin-bottom: 30px
+	.teacher-slide
+		.slick-prev, .slick-next
+			+fs(0)
+			+pos(abs,null)
+			color: $white
+			opacity: 0.5
+			line-height: 40px
+			&:before
+				+fs(32rem)
+			&:hover
+				opacity: 1
+		.slick-prev
+			top: -35px
+			right: 40px
+			left: unset
+			+transform(translateY(-100%))
+			&:before
+				content: '\f104'
+				font-family: 'fontawesome'
+		.slick-next
+			top: -35px
+			right: 0
+			+transform(translateY(-100%))
+			&:before
+				content: '\f105'
+				font-family: 'fontawesome'
+		.slick-list
+			margin: 0 -60px
+		.item
+			// padding: 0px 60px
+			.teacher
+				figure 
+					.teacherimg
+						display: block
+						+bor-rad(50%)
+						width: 150px
+						height: 150px
+						overflow: hidden
+						margin: 0 auto
+						img 
+							width: 100%
+							height: 150px
+							object-fit: cover
+					figcaption
+						padding: 10px 0
+						text-align: center
+						.teachername
+							font-weight: 600
+							color: $white
+							a 
+								color: $white
+
+.home-schedule
+	padding: 40px 0
+	.hometitle
+		color: $white
+		margin-bottom: 30px
+	.content
+		color: $white
+	.form-group
+		margin-bottom: 15px
+		label 
+			display: block
+			color: $white
+			margin-bottom: 10px
+		select 
+			padding: 10px 20px
+			+bor-rad(5px)
+			background: color-rgba($white,0.5)
+			width: 100%
+			border: none
+			color: $main
+	.view-schedule
+		+bor-rad(50px)
+		line-height: 40px
+		text-align: center
+		text-transform: uppercase
+		padding: 0px 30px
+		display: inline-block
+		background: $green
+		color: $white
+
+.home-about
+	padding: 40px 0
+	.home-intro 
+		margin-top: 40px
+		border: 5px solid $green
+		border-left: none
+		.title
+			+fs(27rem)
+			text-transform: uppercase
+			color: $main
+			margin-top: -25px
+			margin-bottom: 30px
+			+media-breakpoint-down(sm)
+				+fs(24rem)
+			span 
+				display: inline-block
+				background: $white
+				padding-right: 10px
+				font-weight: 600
+		.content
+			padding-right: 20px
+			color: darken($white,50%)
+			margin-bottom: 70px
+			+media-breakpoint-down(sm)
+				margin-bottom: 30px
+				padding: 15px
+		.homeabout-nav
+			background: $white
+			margin-left: -80px
+			margin-right: 80px
+			margin-bottom: -50px
+			+media-breakpoint-down(sm)
+				margin: 0
+			.item 
+				padding: 6px
+
+
+.tuvan-button
+	display: block
+	text-align: center
+	margin-bottom: 40px
+	.btn-viewmore
+		+fs(16rem)
+		font-weight: 600
+		line-height: 38px
+		+transition(all 0.4s)
+		height: 40px
+		color: $white
+		display: inline-block
+		background: $green
+		text-align: center
+		padding: 0 25px
+		+bor-rad(40px)
+		&:hover, &:focus
+			background: lighten($green, 5%)

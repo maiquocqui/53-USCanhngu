@@ -1,0 +1,125 @@
++breadcrumb("Hỗ trợ", "img/breadcrumb/2.jpg")
+.container
+	.row.flex.flex-wrap
+		.col-xs-12.col-lg-9
+			section.news-page.clearfix
+				h1.pagetitle Đăng ký lịch hẹn tư vấn du học
+				.bookingform.clearfix
+					.form-group
+						label Họ tên
+						input(type="text")
+					.form-group.date
+						label Ngày sinh
+						ul 
+							li 
+								select
+									option Ngày
+							li 
+								select
+									option Tháng
+							li 
+								select
+									option Năm
+					.form-group
+						label Điện thoại nhà
+						input(type="text")
+					.form-group
+						label Điện thoại di động
+						input(type="text")
+					.form-group
+						label Điạ chỉ
+						input(type="text")
+					.form-group
+						label Email
+						input(type="text")
+					.form-group
+						label Chương trình quan tâm
+						select
+							option Ngôn ngữ
+					.form-group.nation
+						label Bạn quan tâm tư vấn du học nước nào?
+						ul.checkbox
+							li
+								input#cb1(type="checkbox", name="cb")
+								label(for="cb1") Mỹ
+							li
+								input#cb2(type="checkbox", name="cb")
+								label(for="cb2") Anh
+							li
+								input#cb3(type="checkbox", name="cb")
+								label(for="cb3") Canada
+							li
+								input#cb4(type="checkbox", name="cb")
+								label(for="cb4") Úc
+							li
+								input#cb5(type="checkbox", name="cb")
+								label(for="cb5") Singapore
+							li
+								input#cb6(type="checkbox", name="cb")
+								label(for="cb6") New Zealand
+							li
+								input#cb7(type="checkbox", name="cb")
+								label(for="cb7") Hà Lan
+					.form-group.text
+						label Nội dung
+						textarea(name="", cols="30", rows="3")
+					.form-group.dateb
+						label Bạn muốn gặp tư vấn viên vào ngày, giờ nào?
+						ul 
+							li
+								select(name="")
+									option 9:00 - 10:00
+							li
+								input(type="text")
+					input(type="submit", value="Đăng ký")
+		.col-xs-12.col-lg-3
+			//- a.btn-backpage(href="#") Quay lại
+			nav.sidebar-category.only.clearfix
+				.othertitle 
+					span Du học
+				ul 
+					li.active
+						a(href="#") Yêu cầu xin visa
+					li
+						a(href="#") Trường học
+					li 
+						a(href="#") Form tư vấn
+			nav.other-news.clearfix
+				.othertitle 
+					span Tin tức mới
+				ul 
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/1.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Học bổng ngành du lịch - nhà hàng - khách sạn
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/2.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Tìm hiểu về ngành dược Đại học Kansas danh tiếng
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/3.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Triển lãm học bổng Mỹ tháng 3/2017
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/4.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Nhận học bổng cùng Đại học Nebraska - Lincoln
+					li.news
+						figure
+							.newsimg
+								img(src="img/news/5.jpg", alt="alt")
+							figcaption 
+								.newsname
+									a(href="#") Kỳ thi xét tuyển học bổng trung học công lập Mỹ

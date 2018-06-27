@@ -1,0 +1,148 @@
+.blog-page
+	.bloglist
+		.blogcol
+			margin-bottom: 30px
+			figure 
+				.blogimg
+					+flexbox
+					align-items: center
+					overflow: hidden
+					height: 400px
+					+pos(rel,null)
+					&:before 
+						content: '\f0c1'
+						font-family: 'fontawesome'
+						+fs(24rem)
+						+pos(abs, 0 null 0 0)
+						right: 0
+						z-index: 5
+						background: color-rgba($green,0.5)
+						+flexbox
+						color: $white
+						justify-content: center
+						align-items: center
+						opacity: 0
+						+transition(all,0.5s)
+					img 
+						width: 100%
+						+transition(all,10s)
+				figcaption
+					border: 1px solid darken($white,10%)
+					border-top: none
+					text-align: center
+					padding: 50px 30px 30px
+					// padding-top: 50px
+					+pos(rel,null)
+					z-index: 10
+					time
+						display: inline-block
+						line-height: 40px
+						font-weight: 700
+						text-transform: uppercase
+						color: $white
+						background: $green
+						padding: 0px 40px
+						letter-spacing: 3px
+						+pos(abs, -20px null null 50%)
+						+transform(translateX(-50%))
+					.blogname
+						+fs(18rem)
+						font-weight: 600
+						margin-bottom: 25px
+						a 
+							color: $main
+							&:hover
+								color: $green
+					.blogdes
+						margin-bottom: 25px
+						color: darken($white,40%)
+					.link
+						color: $green
+						&:hover
+							letter-spacing: 2px
+						&:after
+							content: '\f105'
+							font-family: 'fontawesome'
+							margin-left: 5px
+				&:hover
+					.blogimg
+						img 
+							+transform(scale3d(1.2,1.2,1))
+						&:before
+							opacity: 1
+					figcaption
+						.blogname
+							a 
+								color: $green
+						.link
+							letter-spacing: 2px
+
+.feedback-slide
+	.slick-prev, .slick-next
+		+pos(abs, 50% null null null)
+		+transform(translateY(-50%))
+		z-index: 10
+		+fs(0)
+		opacity: 0.5
+		color: $main
+		&:before
+			content: ''
+			font-family: 'fontawesome'
+			+fs(32rem)
+		&:hover
+			opacity: 1
+			color: $bluebg
+	.slick-prev
+		left: -20px
+		&:before
+			content: '\f104'
+	.slick-next
+		right: -20px
+		&:before
+			content: '\f105'
+	.item
+		padding: 0px 15px
+		.feedback
+			.content
+				padding: 15px 20px
+				+bor-rad(5px)
+				background: $green
+				color: $white
+				+pos(rel,null)
+				margin-bottom: 30px
+				&:after
+					content: ''
+					display: block
+					width: 0
+					height: 0
+					border: 20px solid transparent 
+					border-color: $green transparent transparent $green
+					+pos(abs, null null -20px 40px)
+			.user
+				figure 
+					+flexbox
+					.img
+						width: 80px
+						height: 80px
+						+bor-rad(50%)
+						overflow: hidden
+						img 
+							width: 100%
+					figcaption
+						width: calc(100% - 80px)
+						padding-left: 15px
+						+flexbox
+						flex-wrap: wrap
+						align-items: center
+						align-content: center
+						.name
+							+fs(16rem)
+							font-weight: 700
+							color: $black
+							// margin-bottom: 5px
+							line-height: 1.5
+							width: 100%
+						.des
+							+fs(14rem)
+							color: darken($white,40%)
+							width: 100%

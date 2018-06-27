@@ -1,0 +1,114 @@
+.landingpage
+	padding-top: 0
+.landing-page
+	width: 100%
+	height: 100vh
+	background: url(../img/landing/bg.jpg) center center no-repeat
+	background-size: cover
+	+media-breakpoint-down(sm)
+		// overflow: auto
+		height: unset
+		min-height: 100vh
+	.sitelogo
+		padding-top: 25px
+	.footer
+		padding-bottom: 20px
+		+media-breakpoint-down(sm)
+			+flexbox
+			flex-wrap: wrap
+			justify-content: center
+		.social
+			float: left
+			.label
+				display: inline-block
+				vertical-align: middle
+				font-weight: 600
+				margin-right: 5px
+			.social-link
+				display: inline-block
+				vertical-align: middle
+				a 
+					display: inline-block
+					width: 30px
+					height: 30px
+					line-height: 26px
+					text-align: center
+					+bor-rad(50px)
+					border: 2px solid $main
+					color: $main
+					+ a 
+						margin-left: 5px
+		.copyright
+			float: right
+			color: $main
+			padding: 5px 0
+.object-wrap
+	+flexbox
+	flex-wrap: wrap
+	align-items: center
+	align-content: center
+	justify-content: center
+	height: calc(100vh - 152px)
+	+media-breakpoint-down(sm)
+		height: auto
+		margin: 20px 0
+	.book1
+		+pos(rel,null)
+		z-index: 5
+		+media-breakpoint-down(lg)
+			width: 250px
+		+media-breakpoint-down(md)
+			width: 200px
+	.book2
+		margin-left: -70px
+		+pos(rel,null)
+		z-index: 10
+		+media-breakpoint-down(lg)
+			width: 250px
+			margin-left: -60px
+		+media-breakpoint-down(md)
+			width: 200px
+			margin-left: -50px
+	.book3
+		margin-left: -60px
+		+pos(rel,null)
+		z-index: 3
+		+media-breakpoint-down(lg)
+			width: 230px
+		+media-breakpoint-down(md)
+			width: 180px
+			margin-left: -70px
+	.ipad
+		+pos(rel,null)
+		z-index: 5
+		margin-left: -50px
+		width: 266px
+		height: 304px
+		+media-breakpoint-down(sm)
+			margin-left: 0
+			margin-bottom: 20px
+		.img-slide
+			+pos(abs, 27px null null 36px)
+			width: 195px
+			height: 246px
+			.item
+			img 
+				width: 195px
+				height: 246px
+				object-fit: cover
+	.mobile-link
+		width: 100%
+		a 
+			display: block
+			text-transform: uppercase
+			font-weight: 700
+			color: $main
+			border: 1px solid $main
+			background: color-rgba($white,0.5)
+			+bor-rad(10px)
+			padding: 10px 15px
+			margin-bottom: 10px
+			&:after
+				content: '\f105'
+				font-family: 'fontawesome'
+				margin-left: 10px
